@@ -29,7 +29,9 @@ export const ProductList = styled(
   padding: 0 10px;
 `;
 
-export const Product = styled.View`
+export const Product = styled.View.attrs({
+  elevation: 2,
+})`
   background: #fff;
   padding: 16px 16px;
   border-radius: 5px;
@@ -46,6 +48,7 @@ export const ProductImage = styled.Image`
 export const ProductTitle = styled.Text`
   font-size: 14px;
   margin-top: 10px;
+  color: #007185;
 `;
 
 export const PriceContainer = styled.View`
@@ -59,7 +62,7 @@ export const PriceContainer = styled.View`
 export const ProductPrice = styled.Text`
   font-weight: bold;
   font-size: 16px;
-  color: #e83f5b;
+  color: #c45500;
 `;
 
 export const ProductButton = styled.TouchableOpacity``;
